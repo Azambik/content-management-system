@@ -1,1 +1,2 @@
-# content-management-system
+node_modules/
+.DS-Store
