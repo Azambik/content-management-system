@@ -1,4 +1,4 @@
-INSERT INTO department (department_name)
+INSERT INTO department (department_id)
 VALUES
    ('java'),
    ('html/css'),
@@ -18,6 +18,4 @@ INSERT INTO employee (first_name, last_name, title_id, department_id, salary_id,
 VALUES
     ('jo', 'vargo', 1, 1, 1, 5 ),
     ('mark', 'harbor', 2, 2, 2, 5 ),
-    ('kimiko', 'tanaka', 3, 3, 3, 1 ),
-    ('valdimer', 'krum', 4, 4, 4, 5 ),
-    ('albus', 'dumbledoor', 5, 5, 5, 5 );
+    ('kimiko', 'tanaka', 3, 3, 3, 1 );

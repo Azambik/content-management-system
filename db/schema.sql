@@ -3,12 +3,12 @@ DROP TABLE IF EXISTS rolls;
 DROP TABLE IF EXISTS employee;
 
 CREATE TABLE department (
-    id INTEGER PRIMARY KEY,
-    department_name VARCHAR(50) NOT NULL
+    id INTEGER PRIMARY KEY NOT NULL,
+    department_id VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE rolls (
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY NOT NULL,
     job_title VARCHAR(30) NOT NULL,
     salary INTEGER UNSIGNED NOT NULL,
     department_id INTEGER UNSIGNED,
@@ -16,7 +16,7 @@ CREATE TABLE rolls (
 );
 
 CREATE TABLE employee (
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY NOT NULL,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     title_id INTEGER UNSIGNED,
