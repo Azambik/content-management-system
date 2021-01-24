@@ -28,3 +28,7 @@ CREATE TABLE employee (
     CONSTRAINT fk_rolls FOREIGN KEY (salary_id) REFERENCES rolls(id),
     CONSTRAINT fk_rolls FOREIGN KEY (title_id) REFERENCES rolls(id)
 )
+
+--SELECT * FROM employee
+ --  ...> LEFT JOIN department ON employee.department_id = department.id
+  -- ...> LEFT JOIN rolls ON employee.salary_id = rolls.id;
