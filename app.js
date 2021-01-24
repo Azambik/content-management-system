@@ -1,6 +1,5 @@
 //importing inquirer
 const inquirer = require('inquirer');
-const inquirer2 = require('inquirer');
 //import sqlite3
 const sqlite3 = require('sqlite3').verbose();
 
@@ -195,7 +194,7 @@ const displayDepartments = () => {
         }
 
        const updateEmployee = () => {
-            return inquirer2.prompt([
+            return inquirer.prompt([
                         {
                             type: 'number',
                             name: 'employee_id',
